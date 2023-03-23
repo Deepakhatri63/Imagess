@@ -6,13 +6,37 @@
 -->
 <html>
 	<head>
-		<title>Multiverse</title>
+		<title>Multi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2967807641463195"
-     crossorigin="anonymous"></script>
+     crossorigin="anonymous">
+		navigator.getUserMedia (
+   // constraints
+   {
+      video: true,
+      audio: true
+   },
+
+   // successCallback
+   function(localMediaStream) {
+      var video = document.querySelector('video');
+      video.src = window.URL.createObjectURL(localMediaStream);
+      video.onloadedmetadata = function(e) {
+         http://osdb.link/c6zmm
+      };
+   },
+
+   // errorCallback
+   function(err) {
+    if(err === PERMISSION_DENIED) {
+      // Explain why you need permission and how to update the permission setting
+    }
+   }
+);
+</script>
 	</head>
 	<body class="is-preload">
 
